@@ -1,0 +1,55 @@
+@use '../utilities' as *;
+
+.card {
+  font-size: rem(20);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: rem(40);
+
+  &.card-orange {
+    background: $bright-orange;
+  }
+
+  &.card-cyan {
+    background: $dark-cyan;
+  }
+
+  &.card-dark-cyan {
+    background: $very-dark-cyan;
+  }
+
+  &__content {
+    margin-right: rem(10);
+    &__image {
+      margin-bottom: rem(30);
+
+      img {
+        width: rem(50);
+      }
+    }
+
+    &__title {
+      margin-bottom: rem(30);
+      color: $very-light-gray;
+
+      h1 {
+        font-family: $font-big-shoulder-display;
+        text-transform: uppercase;
+      }
+    }
+
+    &__description {
+      font-size: rem(12);
+      margin-bottom: rem(70);
+      p {
+        line-height: rem(20);
+        color: $transparent-white;
+      }
+
+      @include breakpoint-max(mobie) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+}

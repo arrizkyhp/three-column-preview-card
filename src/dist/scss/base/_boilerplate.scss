@@ -1,0 +1,28 @@
+@use '../utilities' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: $font-lexend-deca;
+}
+
+body {
+  @include centering();
+  background-color: $very-light-gray;
+  font-size: rem(15);
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

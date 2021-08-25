@@ -1,0 +1,29 @@
+@use '../utilities' as *;
+
+.btn {
+  padding: rem(10) rem(25);
+
+  border: none;
+  cursor: pointer;
+  border-radius: rem(20);
+  font-weight: 700;
+  border: 2px solid $very-light-gray;
+
+  &.btn-orange {
+    color: $bright-orange;
+  }
+
+  &.btn-cyan {
+    color: $dark-cyan;
+  }
+
+  &.btn-dark-cyan {
+    color: $very-dark-cyan;
+  }
+
+  &:hover {
+    background: transparent;
+    color: $very-light-gray;
+    border: 2px solid $very-light-gray;
+  }
+}
